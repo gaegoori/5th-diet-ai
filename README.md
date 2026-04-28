@@ -2,8 +2,7 @@
 # DIET: Legal AI Assistant (RAG + QLoRA)
 
 ## Overview
-DIET (Distilled Intelligent Efficient Thinking)는  
-학교 및 공공기관 환경에서 **안전하게 사용할 수 있는 법률 AI 시스템**을 목표로 개발된 프로젝트입니다.
+DIET (Distilled Intelligent Efficient Thinking)는 학교 및 공공기관 환경에서 **안전하게 사용할 수 있는 법률 AI 시스템**을 목표로 개발된 프로젝트입니다.
 
 기존 AI 서비스는 개인정보 및 내부 문서를 외부 서버로 전송해야 하는 문제로 인해, 학교나 공무적 사용에서의 활용이 어려웠습니다.  
 본 프로젝트는 이러한 문제를 해결하기 위해 **로컬 기반 + RAG + Fine-tuning 구조**를 결합하여 보안성과 정확성을 동시에 확보하기 위해 기획되어졌습니다. 
@@ -32,7 +31,7 @@ DIET (Distilled Intelligent Efficient Thinking)는
 | 변하지 않는 법률 지식 | Fine-tuning |
 | 최신 규정 / 문서 | RAG |
 
--> Fine-tuning과 RAG를 결합하여 정확성과 최신성을 동시에 확보
+-> 데이터에 특화하여 Fine-tuning과 RAG를 결합하여 정확성과 최신성을 동시에 확보
 
 ---
 
@@ -83,15 +82,6 @@ DIET (Distilled Intelligent Efficient Thinking)는
 2. 법률 조항 단위로 문서 분할
 3. RecursiveCharacterTextSplitter를 활용한 chunking
 4. ChromaDB에 벡터 형태로 저장
-
----
-
-### 데이터 활용 전략
-
-| 데이터 유형 | 활용 방식 |
-|------------|----------|
-| 정적인 법률 지식 | Fine-tuning |
-| 최신 문서 및 규정 | RAG |
 
 ---
 
